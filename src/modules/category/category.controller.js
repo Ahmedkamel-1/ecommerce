@@ -78,5 +78,5 @@ export const allCategories = asyncHandler(async (req,res,next)=>{
         path:'subcategory',
         populate: [{path:"createdBy" , select:"userName -_id"}]
     })
-    return res.json({success:true , result:categories})
+    return res.json({success:true , result:categories , test:"vercel"})
 })
